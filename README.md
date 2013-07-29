@@ -1,4 +1,11 @@
 doc
 ===
 
-markdown file
+
+----------
+
+
+markdown file repository
+
+
+セミナーなどのレポートを格納しておく。

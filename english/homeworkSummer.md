@@ -1,6 +1,6 @@
-**Why Testers?**
+**Why Testers?**  
 [http://www.joelonsoftware.com/items/2010/01/26.html](http://www.joelonsoftware.com/items/2010/01/26.html) 
-
+  
 **問題**  
 
 
@@ -37,7 +37,7 @@
 **relevant：関係、関連のある**  
 
 
-この記事に対する意見を英語で書いてきてください。
+この記事に対する意見を英語で書いてきてください。  
 **In this column, the Tester(and automation test) is defined as menber(task) testing Joint Test later.**  
 **But, in my company, Unit test are not even autmated.**  
 **So, it is dangerous that this column is reference.**
@@ -87,18 +87,19 @@ Who should be a tester? That’s tricky! Software testing is one of those career
 ----------
 
 
-Signs of a good tester:
+**Signs of a good tester:**
   
 
 
-Scientific
+* Scientific
   
 
-Loves a good puzzle, even the kind that takes days to solve
+* Loves a good puzzle, even the kind that takes days to solve
   
-Likes to think about things methodically
-Generally likes working with software and computers
-You don’t have to be a programmer to be a tester.  
+* Likes to think about things methodically  
+* Generally likes working with software and computers  
+
+You don’t have to be a programmer to be a tester.    
   
 A lot of companies want testers to be programmers who write automated test suites.  
 It seems more efficient that way.  
@@ -121,7 +122,10 @@ Since testing can be taught on the job, but general intelligence can’t, you re
 Many of the best testers I’ve worked with didn’t even realize they wanted to be testers until someone offered them the job.  
   
 
-If you:
+----------
+
+
+**If you:**
 
 
 Love software and computers
@@ -136,10 +140,14 @@ Have you been wondering about Distributed Version Control? It has been a huge pr
 
 
 
-Want to know more? You’re reading Joel on Software, stuffed with years and years of completely raving mad articles about software development, managing software teams, designing user interfaces, running successful software companies, and rubber duckies.  
+Want to know more?  
+You’re reading Joel on Software, stuffed with years and years of completely raving mad articles about software development, managing software teams, designing user interfaces, running successful software companies, and rubber duckies.  
    
 
-About the author.  
+----------
+
+
+**About the author.**  
 
 I’m Joel Spolsky, co-founder of Fog Creek Software, a New York company that proves that you can treat programmers well and still be highly profitable.  
   

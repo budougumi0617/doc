@@ -1,0 +1,7 @@
+Vim editor insert test 
+commit check
+
+
+emacs check
+
+

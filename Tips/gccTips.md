@@ -27,3 +27,5 @@
 
 
 [ldd - コマンドがリンクしているライブラリの表示](http://www.ksknet.net/linuxjq/ldd.html "ldd - コマンドがリンクしているライブラリの表示")
+
+

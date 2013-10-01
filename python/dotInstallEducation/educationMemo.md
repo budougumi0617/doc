@@ -21,6 +21,7 @@ http://dotinstall.com/lessons/basic_python
 #coding UTF-8
 
 print "hello World"
+def MyFunction(param, ...)
 ```
 
 を記載しておく。

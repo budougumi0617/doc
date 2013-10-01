@@ -19,6 +19,8 @@ http://dotinstall.com/lessons/basic_python
 
 ```python
 #coding UTF-8
+
+print "hello World"
 ```
 
 を記載しておく。

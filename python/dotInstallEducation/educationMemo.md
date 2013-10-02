@@ -108,4 +108,22 @@ print u"こんにちは！"
 ----------
 
 
+### 文字列の操作 ###
+
+```python
+#coding UTF-8
+
+#連結は算術のように実施できる。
+print "hello" + " world"
+
+#繰り返しも算術のように実施できる。
+print u"hoge" * 10
+
+#文字列長を出力できる。
+print len("abcdefg")
+
+```
+
+
+
 

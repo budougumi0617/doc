@@ -187,7 +187,6 @@ print a * 5
 `range()`関数で生成したりすることが出来る。
 
 ```python
-$ less src/11.py
 #encoding: UTF-8
 #file name src/11.py
 #list

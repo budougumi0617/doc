@@ -154,3 +154,54 @@ print "i am " + str(age) + " years old"
 
 ```
 
+
+
+----------
+
+### リスト操作を扱う ###
+リスト操作でも要素の型を意識せずに挿入や変更ができる。
+
+```python
+#encoding: UTF-8
+#file name src/10.py
+#list
+
+a = [1, 2, "a", 4, 5.5]
+b = list([3,5])
+
+print a
+print b
+
+#len + len + * [] [start:end]
+print len(a)
+a[2:4]  = ["b", "c"]
+print a
+print a * 5
+
+```
+
+
+### リスト操作その２ ###
+
+`foo.reverse()`で逆順にしたり、  
+`range()`関数で生成したりすることが出来る。
+
+```python
+$ less src/11.py
+#encoding: UTF-8
+#file name src/11.py
+#list
+
+a = [1, 2, "a", 4, 5.5]
+b = list([3,5])
+
+print a
+a.reverse()
+print a
+print 4 in a
+b = range(3, 10) # 3から10の間の数値列
+print b
+b = range(3, 10, 2) # 3から10の間を２つ飛ばしで。
+print b
+
+```

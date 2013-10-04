@@ -130,5 +130,27 @@ print len("abcdefg")
 
 ### 部分文字列の切り出し、検索の仕方 ###
 
+文字列変数の後ろに[start:end]で切り出したい範囲を指定する  
+`print s[1:5]`など。`s[1:-2]`の場合は2文字目から最後から-2文字目まで。
 
+またfind関数があるので、`find(str)`とすることで、`str`で指定した文字列の先頭位置を知ることができる。
+
+
+----------
+
+### 文字列と数値の相互変換 ###
+キャストのようにすることで変換が可能。
+
+```python
+#encoding: UTF-8
+#file name /src/09.py
+#caluculate string and int or float
+
+print 5 + int("5")
+
+age = 20
+
+print "i am " + str(age) + " years old"
+
+```
 

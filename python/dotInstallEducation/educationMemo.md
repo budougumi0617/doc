@@ -266,3 +266,48 @@ a["fkoji"] = 5000
 
 print a
 ```
+
+`a.items(), a.keys()`などで内容を表示することができる。
+
+```python 
+# coding: UTF-8
+# file name 16.py
+# dictionary type (key value)
+
+a = {"taguchi":200, "fkoji":300, "dotinstall":500}
+
+print "sasaki" in a
+
+# keys, values, items
+print a.keys()
+print a.values()
+print a.items()
+```
+
+
+----------
+### printの応用 ###
+
+NativeCの`printf()`のような表示も可能。  
+辞書型を利用するとデータを取り出すことも出来る。
+
+```python
+# coding: UTF-8
+# file name 17.py
+# dictionary type (key value)
+
+
+a = 10
+b = "taguchi"
+c = {"taguchi":100, "fkoji":200}
+
+print "my age is %d" % a
+print "%5d" %a
+print "my name is %s" % b
+print "%s is %d years old" % (b, a)
+print "%(taguchi)d" % c
+```
+
+
+
+

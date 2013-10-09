@@ -204,3 +204,41 @@ b = range(3, 10, 2) # 3から10の間を２つ飛ばしで。
 print b
 
 ```
+
+
+----------
+
+### リスト操作その3 ###
+
+文字列は`foo.split("/")`で簡単に分割できる    
+また、配列は`"-".join(foo)`で連結したりすることが出来る。
+
+
+
+
+----------
+### セット（集合型） ###
+
+重複がsetされることはない。  
+論理演算が可能  
+`^`はNAND
+
+
+```python
+# coding: UTF-8
+# file name 14.py
+# set type
+
+a = set(["taguchi", "Tom", "dotinstall", "taguchi"])
+b = set(["taguchi", "Tom", "sasaki"])
+
+print a
+
+print a - b
+
+print a & b
+
+print a | b
+
+print a ^ b
+```

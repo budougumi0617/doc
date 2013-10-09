@@ -5,3 +5,12 @@
 a = set(["taguchi", "Tom", "dotinstall", "taguchi"])
 b = set(["taguchi", "Tom", "sasaki"])
 
+print a
+
+print a - b
+
+print a & b
+
+print a | b
+
+print a ^ b

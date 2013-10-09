@@ -242,3 +242,27 @@ print a | b
 
 print a ^ b
 ```
+
+
+
+----------
+### 辞書型の利用 ###
+
+mapのようなものを作成する  
+あとから値の変更も可能  
+
+
+```python
+# coding: UTF-8
+# file name 15.py
+# dictionary type (key value)
+
+
+a = {"taguchi":200, "fkoji":300, "dotinstall":500}
+
+print a["fkoji"]
+
+a["fkoji"] = 5000
+
+print a
+```

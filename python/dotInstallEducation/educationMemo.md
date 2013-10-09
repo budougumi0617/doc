@@ -309,5 +309,77 @@ print "%(taguchi)d" % c
 ```
 
 
+```python
+# coding: UTF-8
+# file name 18.py
+# if statement
+
+#can use <= >= < > == !=
+
+score = 70
+
+if score >= 80:
+  print "pass!"
+  print "check"
+print "finished check"
+
+```
 
 
+----------
+### if条件を使った処理 ###
+
+`NativeC`のような`if{}`はスペースで行う。  
+下記のサンプルコードでは`if`ステートメントに含まれているのは二つ目の`print`までである。  
+
+```python
+# coding: UTF-8
+# file name 18.py
+# if statement
+
+#can use <= >= < > == !=
+
+score = 70
+
+if score >= 80:
+  print "pass!"
+  print "check"
+print "finished check"
+
+```
+
+
+----------
+
+比較的自由な体裁で`if`文を書くことができる。
+
+```python
+# coding: UTF-8
+# file name 18.py
+# if statement
+
+#can use <= >= < > == !=
+
+score = 70
+
+if score >= 80:
+  print "pass!"
+  print "check"
+else :
+  print "not pass!"
+
+print "finished check"
+
+print "pass!" if score >= 80 else "not pass!"
+
+if score >= 80:
+  print "OK!"
+elif score >= 60:
+  print "so so"
+else :
+  print "oh..."
+
+if 40 < score < 60:
+  print "..."
+```
+  

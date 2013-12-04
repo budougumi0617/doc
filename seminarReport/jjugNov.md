@@ -11,6 +11,9 @@ jenkinsの川口さんをゲストで招く
 
 
 ----------
+
+[スライド資料](http://www.slideshare.net/agetsuma/jjug-11-cdi)
+
 Dependency Inteli
 
 JavaEEでシステムを構築するとWeb3層構造になる。

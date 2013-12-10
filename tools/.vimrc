@@ -1,28 +1,80 @@
-scriptencoding utf-8
-set nocompatible
+"#####表示設定#####
+set number "行番号を表示する
+set title "編集中のファイル名を表示
+set showmatch "括弧入力時の対応する括弧を表示
+syntax on "コードの色分け
+set tabstop=4 "インデントをスペース4つ分に設定
+set smartindent "オートインデント
+"Tab、行末の半角スペースを明示的に表示する
+set list
+set listchars=tab:^\ ,trail:~
+" ウィンドウの幅より長い行は折り返され、次の行に続けて表示される
+set wrap
 
-if has('vim_starting')
-  filetype plugin off
-  filetype indent off
-  execute 'set runtimepath+=' . expand('~/.vim/bundle/neobundle.vim')
+
+"#####検索設定#####
+set ignorecase "大文字/小文字の区別なく検索する
+set smartcase "検索文字列に大文字が含まれている場合は区別して検索する
+set wrapscan "検索時に最後まで行ったら最初に戻る
+
+
+
+"バックスペースでインデントや改行を削除できるようにする
+set backspace=indent,eol,start
+
+"スペースでダウンアップ
+nnoremap <Space>  <C-E>
+nnoremap <C-Space> <C-Y>
+
+
+" ESCを二回押すことでハイライトを消す
+nmap <silent> <Esc><Esc> :nohlsearch<CR>
+" jjをESCキー
+inoremap <silent> jj <esc>
+" 挿入モードでのカーソル移動
+inoremap <C-j> <Down>
+inoremap <C-k> <Up>
+inoremap <C-h> <Left>
+inoremap <C-l> <Right>
+
+" TABにて対応ペアにジャンプ
+nnoremap <Tab> %
+vnoremap <Tab> %
+
+" ---  ファイラーを起動 ---
+nnoremap <silent><Space>j    :Explore<CR>
+
+
+""""""""""""""""""""""""""""""
+"挿入モード時、ステータスラインの色を変更
+""""""""""""""""""""""""""""""
+let g:hi_insert = 'highlight StatusLine guifg=darkblue guibg=darkyellow gui=none ctermfg=blue ctermbg=yellow cterm=none'
+
+if has('syntax')
+  augroup InsertHook
+  autocmd!
+  autocmd InsertEnter * call s:StatusLine('Enter')
+  autocmd InsertLeave * call s:StatusLine('Leave')
+  augroup END
 endif
-call neobundle#rc(expand('~/.vim/bundle'))
 
-NeoBundle 'git://github.com/kien/ctrlp.vim.git'
-NeoBundle 'git://github.com/Shougo/neobundle.vim.git'
-NeoBundle 'git://github.com/scrooloose/nerdtree.git'
-NeoBundle 'git://github.com/scrooloose/syntastic.git'
+let s:slhlcmd = ''
+function! s:StatusLine(mode)
+ if a:mode == 'Enter'
+   silent! let s:slhlcmd = 'highlight ' . s:GetHighlight('StatusLine')
+   silent exec g:hi_insert
+ else
+   highlight clear StatusLine
+   silent exec s:slhlcmd
+ endif
+endfunction
 
-syntax on
-filetype plugin on
-filetype indent on
+function! s:GetHighlight(hi)
+ redir => hl
+ exec 'highlight '.a:hi
+ redir END
+ let hl = substitute(hl, '[\r\n]', '', 'g')
+ let hl = substitute(hl, 'xxx', '', '')
+ return hl
+endfunction
 
-" SSH クライアントの設定によってはマウスが使える（putty だと最初からいける）
-set mouse=n
-
-"インサートモードでも移動
-inoremap <c-d> <delete>
-inoremap <c-h> <left>
-inoremap <c-l> <right>
-inoremap <c-j> <down>
-inoremap <c-m> <esc>

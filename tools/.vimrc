@@ -85,3 +85,8 @@ function! s:GetHighlight(hi)
  return hl
 endfunction
 
+
+" taglist
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+noremap <Leader>f :TlistToggle<CR>        "taglist key

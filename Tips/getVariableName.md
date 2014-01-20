@@ -30,8 +30,6 @@ int main(int argc, char *argv[]) {
     // Display variable name.
     std::cout << str << std::endl;
     TestMacroStructure checkMacro;
-    std::cout << TO_STRING( nfa_increment_references_msg) << std::endl;
-    std::cout << TO_STRING( nfa_increment_references_msg.path ) << std::endl;
     std::cout << TO_STRING( checkMacro.value) << std::endl;
     std::cout << TO_STRING( checkMacro.fooSt) << std::endl;
     std::cout << TO_STRING( checkMacro.fooSt.charArray) << std::endl;

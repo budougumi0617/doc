@@ -48,9 +48,14 @@ CDIはWeb構築に、EJBは基幹システムで使うのがよろしい。
 
 ### おっぴろげ DevOps ###
 
+ [スライド資料](http://www.slideshare.net/nagaseyasuhito/extreme-opened-java-ee-devops)
 
-なぜかJavaEEの導入事例が少ない。。。
+
+ネットや勉強会では、なぜかJavaEEの導入事例が少ない。。。
 なので、グリーでの導入事例を公開する
+
+---
+
 
 Glass fishを用いてREST APIベースのジョブワーカーを作成した
 

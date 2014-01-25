@@ -34,7 +34,7 @@ NetBeansを選んだ理由はHTML5、JavaFXを安定して利用できそうだ�
 Webブラウザでフォームを動作を確認して、完成。
 NetBeansではChromeを利用してリアルタイムプレビューを行うことができた。
 
-````html
+```html
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -54,6 +54,6 @@ and open the template in the editor.
         </p>
     </body>
 </html>
-````
+```
 
 このドットインストールは全８回なので、適宜続きを行ってみる。

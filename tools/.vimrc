@@ -37,6 +37,9 @@ inoremap <C-k> <Up>
 inoremap <C-h> <Left>
 inoremap <C-l> <Right>
 
+" 挿入モードでバックスペース
+inoremap <C-x> <BS>
+
 set expandtab 
 set tabstop=4
 set shiftwidth=4

@@ -1,5 +1,15 @@
+CentOS6.4+Samba4.1.2でSMB+Kerberos認証のファイル共有サーバを構築する
 
+Kerberos認証を利用したファイル共有サーバを構築します。
+基本的には次のサイト様の手順に従って行えばできるので、設定ファイルなどの例が不要な方は、直接URL先を参考にしてください。
+ただ、すでに構築済みのLinuxに追加よりも、OSインストール直後の環境のほうが手詰まりなく作業ができました。
 
+Samba4でのActive Directory構築
+[http://www.oss-d.net/samba4/ad](http://www.oss-d.net/samba4/ad)
+
+## Samba4.Xパッケージをインストール
+Samba4.X系のパッケージはパッケージ内にKerberos機能も搭載しています。
+そこで今回は既存のADや構築済みのKerberos認証を用いず、Samba4.X系のパッケージを利用して表題の環境を構築します。
 
 
 

@@ -94,3 +94,9 @@ endfunction
 let Tlist_Show_One_File = 1
 let Tlist_Exit_OnlyWindow = 1
 noremap <Leader>f :TlistToggle<CR>        "
+
+"color scheme
+syntax enable
+set background=dark
+"let g:solarized_termcolors=256
+colorscheme torte

@@ -99,3 +99,10 @@ alias history='history -E'
 function cd() {
    builtin cd $@ && ls;
 }
+#------------------------------------------------------------------------
+# anyenv
+# ------------------------------------------------------------------------
+if [ -d ${HOME}/.anyenv ] ; then
+  export PATH="$HOME/.anyenv/bin:$HOME/.anyenv/shims:$PATH"
+  eval "$(anyenv init -)"
+fi

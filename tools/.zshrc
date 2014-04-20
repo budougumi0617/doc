@@ -51,7 +51,7 @@ zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 # プロンプトに色を付ける
 autoload -U colors; colors
 # # 一般ユーザ時
-tmp_prompt="%F{cyan}[%n@%D{%m/%d %T}]%f "
+tmp_prompt="%F{cyan}[%n@%D{%T}]%f "
 #tmp_prompt="%{${fg[cyan]}%}%n%# %{${reset_color}%}"
 tmp_prompt2="%{${fg[cyan]}%}%_> %{${reset_color}%}"
 tmp_rprompt="%{${fg[green]}%}[%~]%{${reset_color}%}"

@@ -13,4 +13,4 @@
 	list = log --pretty=format:\"<%h> %ad [%an] %Cgreen%d%Creset %s\" --date=short
 	df = diff
 [core]
-	autocrlf = true
+	autoCRLF = false

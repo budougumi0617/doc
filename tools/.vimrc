@@ -26,7 +26,6 @@ set backspace=indent,eol,start
 nnoremap <Space>  <C-E>
 nnoremap <C-Space> <C-Y>
 
-
 " ESCを二回押すことでハイライトを消す
 nmap <silent> <Esc><Esc> :nohlsearch<CR>
 " jjをESCキー

@@ -118,7 +118,7 @@ fi
 # ------------------------------------------------------------------------
 if [ -d ${HOME}/.rbenv ] ; then
   export PATH="$HOME/.rbenv/bin:$PATH"
-  eval "$(anyenv init -)"
+  eval "$(rbenv init -)"
   source ~/.rbenv/completions/rbenv.zsh
 fi
 # ------------------------------------------------------------------------

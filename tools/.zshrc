@@ -132,5 +132,5 @@ bindkey "^[[3~" delete-char
 # zsh-completions
 # ------------------------------------------------------------------------
 if [ -d ${HOME}/.zsh/zsh-completions/src ] ; then
- #   fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
+    fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
 fi

@@ -119,3 +119,10 @@ fi
 bindkey "^[[H" beginning-of-line
 bindkey "^[[F" end-of-line
 bindkey "^[[3~" delete-char
+
+# ------------------------------------------------------------------------
+# zsh-completions
+# ------------------------------------------------------------------------
+if [ -d ${HOME}/.zsh/zsh-completions/src ] ; then
+ #   fpath=(${HOME}/.zsh/zsh-completions/src $fpath)
+fi

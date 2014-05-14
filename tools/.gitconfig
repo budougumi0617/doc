@@ -15,3 +15,5 @@
     df = diff
 [core]
     autoCRLF = false
+[push]
+	default = simple

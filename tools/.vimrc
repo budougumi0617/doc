@@ -10,6 +10,8 @@ set list
 set listchars=tab:^\ ,trail:~
 " ウィンドウの幅より長い行は折り返され、次の行に続けて表示される
 set wrap
+" カーソルの行を強調
+set cursorline
 
 "#####検索設定#####
 set ignorecase "大文字/小文字の区別なく検索する
